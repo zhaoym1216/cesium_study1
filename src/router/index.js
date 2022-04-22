@@ -1,11 +1,22 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import Cesium from '../components/cesium.vue'
 
 const routes = [
   {
     path: '/',
     name: 'home',
+    component: Cesium
+  },
+  {
+    path: '/view',
+    name: 'view',
     component: HomeView
+  },
+  {
+    path: '/cesium',
+    name: 'cesium',
+    component: Cesium
   },
   {
     path: '/about',
